@@ -14,6 +14,8 @@
 
   Written by Limor Fried/Ladyada for Adafruit in any redistribution
  ****************************************************/
+#ifndef Adafruit_MLX90614_H
+#define Adafruit_MLX90614_H
 
 #include <Adafruit_I2CDevice.h>
 #include <Arduino.h>
@@ -66,3 +68,4 @@ private:
   byte crc8(byte *addr, byte len);
   uint8_t _addr;
 };
+#endif
